@@ -163,4 +163,3 @@ if st.button('Prédire'):
 
 if __name__ == "__main__":
     port=int(os.environ.get("PORT"))
-    st.server.start_server(port=port)
