@@ -160,3 +160,7 @@ if st.button('Prédire'):
     # Convertir le masque recolorisé en image PIL et l'afficher
     color_mask_associated_image = Image.fromarray(color_mask_associated)
     st.image(color_mask_associated_image, caption='Masque Associé Recolorisé')
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8501))  # Utilisez le port fourni par Heroku ou, par défaut, le port 8501
+    st.server.start_server(port=port)
