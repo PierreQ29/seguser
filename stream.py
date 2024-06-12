@@ -126,8 +126,8 @@ def display_color_legend(legend):
         st.write(f"{category} : ", color)
 
 st.title('Application de Segmentation d\'Image')
-mask_folder = "C:\\Users\\pierr\\Projet8\\App\\User\\image\\Masks"
-image_folder = "C:\\Users\\pierr\\Projet8\\App\\User\\image\\Original"
+mask_folder = "image/Masks"
+image_folder = "image/Original"
 image_files = os.listdir(image_folder)
 selected_image = st.selectbox('Sélectionnez une image:', image_files)
 
