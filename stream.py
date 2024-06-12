@@ -161,7 +161,4 @@ if st.button('Prédire'):
     color_mask_associated_image = Image.fromarray(color_mask_associated)
     st.image(color_mask_associated_image, caption='Masque Associé Recolorisé')
 
-if __name__ == "__main__":
-  port = int(os.environ.get("PORT"))
-  st.server.start_server(port=port)
 
